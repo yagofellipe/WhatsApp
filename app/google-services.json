@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "478932006307",
+    "project_id": "whatsapp-2305f",
+    "storage_bucket": "whatsapp-2305f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478932006307:android:48ca4948994871e7e71616",
+        "android_client_info": {
+          "package_name": "com.yagofellipe.whatsapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpAIdwogNj_8vmukal1Fu2JMg-ExeN99E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
