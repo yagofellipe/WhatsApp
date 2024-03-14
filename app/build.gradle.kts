@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.yagofellipe.whatsapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.yagofellipe.whatsapp"
@@ -33,6 +33,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 
