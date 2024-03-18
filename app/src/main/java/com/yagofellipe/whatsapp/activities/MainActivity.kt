@@ -1,4 +1,4 @@
-package com.yagofellipe.whatsapp
+package com.yagofellipe.whatsapp.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +10,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.core.view.MenuProvider
 import com.google.android.material.tabs.TabLayoutMediator
 import com.google.firebase.auth.FirebaseAuth
+import com.yagofellipe.whatsapp.R
 import com.yagofellipe.whatsapp.adapters.ViewPagerAdapter
 import com.yagofellipe.whatsapp.databinding.ActivityMainBinding
 

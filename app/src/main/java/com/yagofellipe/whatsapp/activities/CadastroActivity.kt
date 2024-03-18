@@ -1,16 +1,15 @@
-package com.yagofellipe.whatsapp
+package com.yagofellipe.whatsapp.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException
 import com.google.firebase.firestore.FirebaseFirestore
 import com.yagofellipe.whatsapp.databinding.ActivityCadastroBinding
-import com.yagofellipe.whatsapp.model.Usuário
+import com.yagofellipe.whatsapp.model.Usuario
 import com.yagofellipe.whatsapp.utils.exibirMensagem
 
 class CadastroActivity : AppCompatActivity() {
@@ -53,7 +52,7 @@ class CadastroActivity : AppCompatActivity() {
             if (it.isSuccessful){
                 val idUsuario = it.result.user?.uid
                 if (idUsuario != null){
-                    val usuario = Usuário (idUsuario, nome, email)
+                    val usuario = Usuario (idUsuario, nome, email)
                     salvarUsuarioFirestore(usuario)
                 }
 
@@ -72,7 +71,7 @@ class CadastroActivity : AppCompatActivity() {
         }
     }
 
-    private fun salvarUsuarioFirestore(usuario: Usuário) {
+    private fun salvarUsuarioFirestore(usuario: Usuario) {
         firestore
             .collection("usuarios")
             .document(usuario.id)

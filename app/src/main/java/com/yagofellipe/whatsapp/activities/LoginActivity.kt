@@ -1,4 +1,4 @@
-package com.yagofellipe.whatsapp
+package com.yagofellipe.whatsapp.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
